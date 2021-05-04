@@ -7,19 +7,7 @@ export default class ShowMessageComponent extends Component {
   @tracked recipeId = this.args.data.id;
   @tracked isdeleted = this.args.checkdeleted;
   @service('recipe-application')recipeValue;
-  @service router;
-  // @service recipeApplication
-  @action
-  isDeleted(){
-    // this.args.checkdeleted = false;
-    // console.log(this.args.checkdeleted);
-    // // val = false;
-    // // console.log(val);
-    // // return val;
-    // // // this.checkIsDeleted();
-    // // return this.isdeleted;
-    // getrecipe = (getrecipe) ? false : true;
-  }
+  @service router;// @service recipeApplication
 
   @action
   deleteRecipe(value){
@@ -27,15 +15,9 @@ export default class ShowMessageComponent extends Component {
       method: 'DELETE',
     })
     .then(res => res.text())
-    .then(res =>{
-      // value.deleteRecord();
-      // value.isDeleted;
-      // value.save();
-      console.log(value);
+    .then(() =>{
       value.destroyRecord();
       this.transitionTo('show-recipe');
-      // this.recipeValue.transitionToMainPage();
-      // value.rollbackAttributes();
     })
   }
 }

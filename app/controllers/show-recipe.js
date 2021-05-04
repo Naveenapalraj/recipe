@@ -18,30 +18,11 @@ export default class ShowRecipeController extends Controller {
       })
       .then(res => res.text())
       .then(() => {
-        // self.model.deleteRecord();
-        // self.model.isDeleted;
-        // self.model.save();
         self.model.unloadRecord();
         self.router.transitionTo('index');
-        // window.location.href = 'http://localhost:4200/recipes';
       })
     }
   }
 
 }
 
-// isdeleted = false;
-  // @computed('isdeleted')
-  // get checkIsDeleted(){
-  //   console.log('hello');
-  //   this.isdeleted = true;
-  //   // return this.set('isdeleted',false);
-  // }
-  // @action
-  // deletemsg(){
-  //   return this.set('isdeleted',true);
-  // }
-
-  // self.router.transitionTo('index');
-        // window.location.reload();
-        // self.router.currentRoute.parent.refresh();

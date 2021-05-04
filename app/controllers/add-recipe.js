@@ -1,7 +1,6 @@
 import Controller from '@ember/controller';
 import {action} from '@ember/object';
-import EmberObject, { computed } from '@ember/object';
-import { tracked } from '@glimmer/tracking';
+
 export default class AddRecipeController extends Controller {
   value = {
     category : 'lunch'
@@ -42,19 +41,3 @@ export default class AddRecipeController extends Controller {
   }
 
 }
-
-
-// @action
-// addRecipe(){
-//   let recipeId = this.store.peekAll('recipe');
-//   if(this.name != undefined && this.duration != undefined && this.ingredients != undefined && this.imageUrl!= undefined ){
-//     let addrecipe = this.store.createRecord('recipe',{id:recipeId.length+1});
-//         addrecipe.name = this.name;
-//         addrecipe.category = this.value.category;
-//         addrecipe.duration = this.duration;
-//         addrecipe.ingredients = this.ingredients;
-//     addrecipe.imageUrl = this.imageUrl;
-//     addrecipe.save();
-//     this.recipeId++;
-//   }
-// }
