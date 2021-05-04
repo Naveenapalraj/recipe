@@ -1,0 +1,33 @@
+<div class = 'homePage'>
+    <div class='homePageHeader'>
+      <h1>Recipe App</h1>
+          <section>
+            <LinkTo @route="add-recipe" class='addSection'>
+              <i class="fa fa-plus" aria-hidden="true"></i>
+            </LinkTo>
+            <h3>Add recipe</h3>
+          </section>
+    </div>
+    <div class='searchSection'>
+      <Input
+        @type='text'
+        @id = 'searchRecipe'
+        autocomplete='off'
+        placeholder="Search ingredient by recipe name or category"
+        @value = {{this.value}}
+        {{on 'input' this.searchRecipe value='target.value'}}
+      />
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </div>
+    <div class='recipeList'>
+      {{#if this.showAllRecipe}}
+        {{#each this.model as |data|}}
+          <RecipeCard @recipe={{data}} />
+        {{/each}}
+      {{else if this.showFilteredRecipe}}
+        {{#each this.filteredRecipe as |data|}}
+          <RecipeCard @recipe={{data}} />
+      {{/each}}
+      {{/if}}
+    </div>
+</div>

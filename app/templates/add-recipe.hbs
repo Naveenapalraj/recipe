@@ -1,0 +1,62 @@
+{{page-title "AddRecipe"}}
+<div class='addRecipeSection'>
+  <div class='getRecipeDetSec'>
+    <h1>Add Recipe</h1>
+    <div class='getRecipeDetails'>
+      <div class='inputDetails'>
+        <section>
+          <label for ="recipe-name">Recipe Name : </label>
+            <Input
+              @id="recipe-name"
+              @type='text'
+              autocomplete='off'
+              @value ={{this.name}}
+              placeholder="Enter recipe name"
+            />
+        </section>
+        <section>
+          <label for="recipeCate">Category :</label>
+          <SelectCategory @value={{this.value}}/>
+        </section>
+        <section>
+          <label for ='recipeDur'>Recipe Duration : </label>
+          <Input
+            @type='text'
+            @id='recipeDur'
+            autocomplete='off'
+            @value={{this.duration}}
+            placeholder ='Enter recipe duration'
+          />
+        </section>
+        <section>
+          <label for="ingredient">Ingredient :</label>
+          <Textarea
+            @id="recipeIng"
+            autocomplete='off'
+            @value = {{this.ingredients}}
+            rows="2"
+            cols="44"
+            placeholder = 'Enter the ingredients'
+          />
+        </section>
+        <section>
+          <label for ='recipeImg'>Image Url : </label>
+          <Input
+            @type='text'
+            @id='recipeImg'
+            autocomplete='off'
+            @value = {{this.imageUrl}}
+            placeholder="Enter the Image Url"
+          />
+        </section>
+      </div>
+      <div class='btnSection'>
+          <button type='button' class='saveRecipe' {{on 'click' this.addRecipe}}>Save</button>
+          <LinkTo @route="index" class='cancelSection'>
+            <button type='button' class='cancelRecipe'>Cancel</button>
+          </LinkTo>
+        </div>
+      </div>
+  </div>
+</div>
+{{outlet}}

@@ -1,0 +1,360 @@
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
+}
+
+html,body{
+  height:100%;
+  background-color:#F7EECC;
+}
+
+.homePage{
+  width:100%;
+  height:100%;
+  background-color:#F7EECC;
+}
+.searchSection{
+  padding:2% 0;
+  display:flex;
+  justify-content: center;
+}
+
+.searchSection input{
+  padding:8px;
+  width:40%;
+  margin-left:1%;
+  background-color:white;
+  border:none;
+  outline:none;
+  font-size:1.2em;
+  border-radius:8px 0 0 8px;
+}
+
+.searchSection i{
+  font-size:1.5em;
+  padding:0.5%;
+  background-color: white;
+  border:0;
+  border-radius:0 8px 8px 0;
+}
+
+textarea{
+  resize:none;
+}
+
+.homePageHeader,.homePageHeader section{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  padding:1% 3%;
+}
+
+.homePageHeader h1{
+  font-family: 'Bree Serif', serif;
+  letter-spacing: 1px;
+  font-size:2em;
+}
+
+.homePageHeader section i{
+  cursor:pointer;
+}
+
+.homePageHeader section h3{
+  padding-left:10px;
+  font-size:1.3em;
+}
+
+.addSection{
+  color:black;
+}
+
+/* style for add recipe section */
+
+.addRecipeSection,.editRecipeSection{
+  width:100%;
+  height:100%;
+  background-color: #0F2638;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.getRecipeDetSec,.geteditRecipeDetSec{
+  width:80%;
+  height:70vh;
+  background-color:#F7EECC;
+  border-radius:8px;
+}
+
+.getRecipeDetSec h1,.geteditRecipeDetSec h1{
+  text-align:center;
+  padding:3% 0;
+  font-family: 'Bree Serif', serif;
+  letter-spacing: 1px;
+  font-size:2em;
+  color:#0F2638;
+}
+
+.getRecipeDetails{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.getRecipeDetails section{
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  margin:5% 0;
+}
+
+.getRecipeDetails input,.getRecipeDetails select,.getRecipeDetails textarea{
+  width:60%;
+  padding:8px;
+  border:1px solid #0F2638;
+  outline:none;
+  border-radius: 5px;
+  font-size:1em;
+}
+
+.getRecipeDetails select{
+  cursor:pointer;
+}
+
+.getRecipeDetails label{
+  font-size:1.5em;
+  font-family: 'Secular One', sans-serif;
+  color:#0F2638;
+}
+
+.btnSection{
+  padding:3%;
+  display:flex;
+}
+
+.btnSection button{
+  padding:10px 20px;
+  cursor:pointer;
+  font-size:1.2em;
+  background-color: #0F2638;
+  color:#F7EECC;
+  outline:none;
+  border:none;
+  border-radius:5px;
+}
+
+.saveSection,.saveRecipe,.editRecipe{
+  margin-right:10%;
+}
+
+.recipeList{
+  display:flex;
+  flex-wrap:wrap;
+  margin-top:1%;
+}
+
+.listContainer{
+  width:20%;
+  height:450px;
+  margin:2%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  background-color: #0F2638;
+}
+
+.listContainer img{
+  width:100%;
+  height:75%;
+}
+
+.listView{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color:white;
+  padding:0 0 4%;
+}
+
+.listContent h1{
+  font-family: 'Bree Serif', serif;
+  letter-spacing: 1px;
+  margin:0 4%;
+  font-size:1.4em;
+  color:white;
+  padding:2% 0 2%;
+}
+.listView h3{
+  padding:0 5%;
+}
+
+.viewBtn button{
+  padding:8px;
+  cursor:pointer;
+  background-color: #F7EECC;
+  border:none;
+  outline:none;
+  font-size:1em;
+  border-radius:5px;
+}
+
+.viewBtn{
+  padding:8px;
+  margin:1% 3%;
+}
+
+.listContent button:active{
+  transform: scale(0.9);
+}
+
+/* Design for show recipe page */
+.showRecipeSection{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.showRecipe{
+  width:70%;
+  margin:6% auto;
+  background-color: #0F2638;
+  color:aliceblue;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.recipeContentSection{
+  display:flex;
+}
+
+.closeBtn{
+  float:right;
+  font-size:1.6em;
+  padding:15px;
+  cursor:pointer;
+}
+
+.recipeImg{
+  width:40%;
+  height:45vh;
+  margin:2%;
+}
+
+.recipeImg img{
+  width:100%;
+  height:100%;
+  border-radius:12px;
+}
+
+.recipeContent{
+  margin:2%;
+  width:40%;
+}
+
+.recipeContent h1{
+  margin:2% 0;
+  font-size:2.2em;
+}
+
+.recipeContent h2{
+  margin:2% 0;
+  font-size:1.7em;
+}
+
+.recipeContent h4{
+  margin:5% 0;
+  font-size:1.2em;
+}
+
+.recipeContent h3{
+  margin:5% 0;
+}
+
+.recipeContent ul{
+  margin:0% 12%;
+  font-size:1.2em;
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  flex-wrap:wrap;
+}
+
+.recipeContent li{
+  width:45%;
+  margin:4% 0;
+}
+
+.showRecSection{
+  color:aliceblue;
+}
+
+.buttonSec{
+  float:right;
+  margin:3% 5%;
+  display:flex;
+}
+
+.buttonSec button{
+  padding:10px 20px;
+  cursor:pointer;
+  font-size:1.2em;
+  background-color: #F7EECC;
+  color:#0F2638;
+  outline:none;
+  border:none;
+  border-radius:5px;
+}
+
+.buttonSec button:active{
+  transform: scale(0.9);
+}
+
+.editBtn,.editSection{
+  margin:0 10%;
+}
+
+.message-box{
+  width:30%;
+  height:30%;
+  background-color:#F7EECC;
+  border-radius:8px;
+  color:#0F2638;
+  position: absolute;
+  top:50%;
+  left:50%;
+  z-index:10;
+  padding:3%;
+  transform:translate(-50%,-50%);
+}
+
+.overlay{
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.4);
+  position: absolute;
+  top:0%;
+  left:0%;
+}
+
+.buttonSection{
+  margin:8% 0;
+  text-align: center;
+}
+
+.buttonSection button{
+  width:20%;
+  padding:8px;
+  margin:0 3%;
+  border-radius:5px;
+  border:none;
+  outline:none;
+  background-color: #0F2638;
+  color:#F7EECC;
+  font-size:1.2em;
+  cursor:pointer;
+}
+
+#recipe-name,#searchRecipe,.ember-text-field{
+  text-transform: capitalize;
+}
