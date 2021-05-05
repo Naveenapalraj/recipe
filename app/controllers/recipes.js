@@ -3,24 +3,21 @@ import {action} from '@ember/object';
 import { tracked } from '@glimmer/tracking';
 import { filterBy } from '@ember/object/computed';
 export default class IndexController extends Controller {
-  @tracked showAllRecipe = true;
-  @tracked showFilteredRecipe = false;
   @tracked filteredRecipe;
-  @tracked searchValue = '';
-
-  @action
-  searchRecipe(){
-    let searchBoxValue = this.searchValue.toLowerCase();
-    if(searchBoxValue.length >1){
-      this.showAllRecipe = false;
-      this.showFilteredRecipe = true;
+  queryParams = ['searchValue'];
+  @tracked searchValue = null;
+  @tracked model;
+  get filterRecipe() {
+    let searchValue = this.searchValue;
+    let modelValue = this.model;
+    if (searchValue) {
+      this.filteredRecipe =  modelValue.filter(function(filteredRecipe){
+        return filteredRecipe.name.includes(searchValue.toLowerCase()) || (filteredRecipe.category.includes(searchValue.toLowerCase()));
+      });
+    }else {
+      this.filteredRecipe =  modelValue;
+      return this.filteredRecipe;
     }
-    else{
-      this.showAllRecipe = true;
-      this.showFilteredRecipe = false;
-    }
-    this.filteredRecipe = this.store.peekAll('recipe').filter(function(filteredRecipe){
-      return filteredRecipe.name.includes(searchBoxValue) || (filteredRecipe.category.includes(searchBoxValue));
-    });
   }
+
 }

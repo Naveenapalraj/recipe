@@ -15,19 +15,13 @@
         autocomplete='off'
         placeholder="Search ingredient by recipe name or category"
         @value = {{this.searchValue}}
-        @input ={{this.searchRecipe}}
+        @input ={{this.filterRecipe}}
       />
       <i class="fa fa-search" aria-hidden="true"></i>
     </div>
     <div class='recipeList'>
-      {{#if this.showAllRecipe}}
-        {{#each this.model as |data|}}
-          <RecipeCard @recipe={{data}} />
-        {{/each}}
-      {{else if this.showFilteredRecipe}}
         {{#each this.filteredRecipe as |data|}}
           <RecipeCard @recipe={{data}} />
-      {{/each}}
-      {{/if}}
+        {{/each}}
     </div>
 </div>
