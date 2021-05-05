@@ -35,7 +35,7 @@ export default class AddRecipeController extends Controller {
           this.set('duration','');
           this.set('ingredients','');
           this.set('imageUrl','');
-          this.transitionToRoute('index');
+          this.transitionToRoute('recipes');
       });
     }
   }
