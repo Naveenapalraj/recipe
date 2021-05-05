@@ -356,5 +356,5 @@ textarea{
 }
 
 #recipe-name,#searchRecipe,.ember-text-field{
-  text-transform: capitalize;
+  text-transform: lowercase;
 }

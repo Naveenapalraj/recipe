@@ -1,28 +1,36 @@
 {
   "recipes": [
     {
-      "name": "Chocolate Nero Cookies",
-      "category": "Snacks",
+      "name": "chocolate nero cookies",
+      "category": "snacks",
       "duration": "15 mins",
       "ingredients": "1 almond,2 eggs,1/3 granulated sugar,2 bittersweet chocolate,2 unsalted butter,1/2 flour,1 baking powder,To roll castor sugar,To roll icing sugar",
       "imageUrl": "https://www.ndtv.com/cooks/images/chocolate-cookies.jpg",
       "id": 1
     },
     {
-      "name": "Irish Coffee",
-      "category": "Beverages",
+      "name": "irish coffee",
+      "category": "beverages",
       "duration": "20 mins",
       "ingredients": "50 Ml Unsweetened Cold Whipping Cream,\n2 Tbsp Soft Brown Sugar,\n50 Ml Irish Whisky,\n1 Cup Freshly Brewed Coffee,\nTo sprinkle Nutmeg (optional)",
       "imageUrl": "https://www.31daily.com/wp-content/uploads/2020/03/md-Non-Alcoholic-Irish-Coffee-2-1-of-1a-480x360.jpg",
       "id": 8
     },
     {
-      "name": "Tricolor Macaroons ",
-      "category": "lunch",
+      "name": "tricolor macaroons ",
+      "category": "snacks",
       "duration": "15 mins",
       "ingredients": "\n1 Cup almond flour,\n1.5 cup powdered sugar,\n3 egg whites,\n1/4 tsp cream of tartar,\n3 tbsp white sugar,\ngreen food colour,\norange food colour,\nwhite food colour,\n2 tbsp unsalted butter,\n100 gms cream cheese,\n1 cup powdered sugar,\n1 tsp vanilla extract,\n2 tsp heavy cream\n\n",
       "imageUrl": "https://i2.wp.com/itsgoa.com/wp-content/uploads/2018/08/Tri-color-Macaroons.png?ssl=1",
       "id": 9
+    },
+    {
+      "name": "vegetable bruschetta",
+      "category": "breakfast",
+      "duration": "25 mins",
+      "ingredients": "30 gms baguette (grilled slices),\n20 gms black olive tapenade,\n35 gms artichoke hearts, grilled,\n5 gms lettuce arugula (trimmed),\n50 gms tomato confit,\n3 gms fresh basil leaves,\n3 gms mint leaves,\n20 gms zucchini,\n30 gms goat cheese,\n8 gms parmesan cheese shavings,\n20 gms mozzarella buffalo cheese",
+      "imageUrl": "https://c.ndtvimg.com/p11dm6bg_bruschetta_625x300_04_September_18.jpg",
+      "id": 10
     }
   ]
 }

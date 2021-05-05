@@ -20,7 +20,7 @@ export default class AddRecipeController extends Controller {
       }
 
       postData('http://localhost:3000/recipes', {
-        name : this.name,
+        name : this.name.toLowerCase(),
         category :this.value.category,
         duration:this.duration,
         ingredients:this.ingredients,

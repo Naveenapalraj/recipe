@@ -6,10 +6,12 @@ export default class IndexController extends Controller {
   @tracked showAllRecipe = true;
   @tracked showFilteredRecipe = false;
   @tracked filteredRecipe;
+  @tracked searchValue = '';
+
   @action
-  searchRecipe(params){
-    let searchValue = params.target.value.capitalize();
-    if(searchValue.length >=1){
+  searchRecipe(){
+    let searchBoxValue = this.searchValue.toLowerCase();
+    if(searchBoxValue.length >1){
       this.showAllRecipe = false;
       this.showFilteredRecipe = true;
     }
@@ -18,7 +20,7 @@ export default class IndexController extends Controller {
       this.showFilteredRecipe = false;
     }
     this.filteredRecipe = this.store.peekAll('recipe').filter(function(filteredRecipe){
-      return filteredRecipe.name.includes(searchValue) || (filteredRecipe.category.includes(searchValue));
+      return filteredRecipe.name.includes(searchBoxValue) || (filteredRecipe.category.includes(searchBoxValue));
     });
   }
 }

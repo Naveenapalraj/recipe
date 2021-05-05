@@ -14,8 +14,8 @@
         @id = 'searchRecipe'
         autocomplete='off'
         placeholder="Search ingredient by recipe name or category"
-        @value = {{this.value}}
-        {{on 'input' this.searchRecipe value='target.value'}}
+        @value = {{this.searchValue}}
+        @input ={{this.searchRecipe}}
       />
       <i class="fa fa-search" aria-hidden="true"></i>
     </div>
