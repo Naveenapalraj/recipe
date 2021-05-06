@@ -4,7 +4,7 @@ import { computed, set } from '@ember/object';
 import { inject as service } from '@ember/service';
 export default class ShowRecipeController extends Controller {
   @service router;
-  @computed('ingedients')
+  @computed('ingredients')
   get ingredientValues(){
     return this.ingredients.split(',');
   }

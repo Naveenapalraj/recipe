@@ -31,6 +31,14 @@
       "ingredients": "30 gms baguette (grilled slices),\n20 gms black olive tapenade,\n35 gms artichoke hearts, grilled,\n5 gms lettuce arugula (trimmed),\n50 gms tomato confit,\n3 gms fresh basil leaves,\n3 gms mint leaves,\n20 gms zucchini,\n30 gms goat cheese,\n8 gms parmesan cheese shavings,\n20 gms mozzarella buffalo cheese",
       "imageUrl": "https://c.ndtvimg.com/p11dm6bg_bruschetta_625x300_04_September_18.jpg",
       "id": 10
+    },
+    {
+      "name": "morning greed",
+      "category": "breakfast",
+      "duration": "20 mins",
+      "ingredients": "\n1 herb Panini bread,\n75 Gram Mint peas mash,\n30 Gram Ricotta crumble,\n2 eggs (scrambled),\n45 Gram Smoked salmon,\nFew Caperberry,\n2 tsp Sour cream",
+      "imageUrl": "https://c.ndtvimg.com/dun94un8_morning-greed_625x300_17_July_18.jpg",
+      "id": 11
     }
   ]
 }

@@ -1,6 +1,7 @@
-import Model,{attr} from '@ember-data/model';
+import Model,{attr, belongsTo } from '@ember-data/model';
 
 export default class RecipeModel extends Model {
+  @belongsTo('category') category;
   @attr('string') name;
   @attr('string') category;
   @attr('string') duration;
