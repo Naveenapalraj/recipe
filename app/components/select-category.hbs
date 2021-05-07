@@ -1,5 +1,5 @@
 <select {{on 'change' selectedCategory value='target.value'}}>
-  {{#each this.categoryValue.categoryValue as |category|}}
+  {{#each this.getCategoryValue as |category|}}
     <option value ={{category.id }} selected={{eq category.id  @categoryData.id}}>{{category.categoryName}}</option>
   {{/each}}
 </select>

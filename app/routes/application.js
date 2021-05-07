@@ -1,8 +1,5 @@
 import Route from '@ember/routing/route';
-import { tracked } from '@glimmer/tracking';
-import { inject as service } from '@ember/service';
 export default class ApplicationRoute extends Route {
-  @service('category') categoryValue;
   beforeModel(){
     this.transitionTo('recipes');
     fetch(`http://localhost:3000/recipes`)
@@ -12,9 +9,11 @@ export default class ApplicationRoute extends Route {
           "recipes":recipe
         })
       })
-      .then(() =>{
+      fetch(`http://localhost:3000/categoryValue`)
+      .then(res => res.json())
+      .then(category => {
         this.store.pushPayload({
-          "category":this.categoryValue.categoryValue
+          "category":category
         })
       })
   }
