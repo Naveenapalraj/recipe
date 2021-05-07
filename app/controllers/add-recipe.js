@@ -3,7 +3,7 @@ import {action} from '@ember/object';
 
 export default class AddRecipeController extends Controller {
   value = {
-    category : 'lunch'
+    category : '1'
   };
   @action
   addRecipe(){

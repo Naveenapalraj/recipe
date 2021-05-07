@@ -7,12 +7,13 @@ export default class IndexController extends Controller {
   queryParams = ['searchValue'];
   @tracked searchValue = null;
   @tracked model;
+  @tracked categoryVal;
   get filterRecipe() {
     let searchValue = this.searchValue;
     let modelValue = this.model;
     if (searchValue) {
-      this.filteredRecipe =  modelValue.filter(function(filteredRecipe){
-        return filteredRecipe.name.includes(searchValue.toLowerCase()) || (filteredRecipe.category.includes(searchValue.toLowerCase()));
+      this.filteredRecipe =  modelValue.filter(function(getRecipe){
+        return getRecipe.name.includes(searchValue.toLowerCase()) || (getRecipe.category.get('categoryName').includes(searchValue.toLowerCase()));
       });
     }else {
       this.filteredRecipe =  modelValue;

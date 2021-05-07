@@ -11,7 +11,7 @@
       <div class='recipeContent'>
         <h1>{{this.model.name}}</h1>
         <h3>Recipe Duration : {{this.model.duration}}</h3>
-        <h4>{{this.model.category}}</h4>
+        <h4>{{this.model.category.categoryName}}</h4>
         <h2>Ingredients :</h2>
         <RecipeIngredient @ingredient={{this.ingredientValues}}/>
       </div>

@@ -16,7 +16,8 @@
         </section>
         <section>
           <label for="recipeCate">Category :</label>
-          <SelectCategory @value={{this.value}}/>
+          {{log this.model}}
+          <SelectCategory @value={{this.value}} @model={{this.model._objects}}/>
         </section>
         <section>
           <label for ='recipeDur'>Recipe Duration : </label>

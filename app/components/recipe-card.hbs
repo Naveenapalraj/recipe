@@ -3,7 +3,7 @@
   <div class='listContent'>
     <h1>{{@recipe.name}}</h1>
     <div class='listView'>
-      <h3>{{@recipe.category}}</h3>
+      <h3>{{@recipe.category.categoryName}}</h3>
       <LinkTo @route="show-recipe" @model={{@recipe.id}} class='viewBtn'>
         <button type='button'>View</button>
       </LinkTo>

@@ -1,10 +1,5 @@
 <select {{on 'change' selectedCategory value='target.value'}}>
-  <option value="lunch">Lunch</option>
-  <option value="breakfast">Breakfast</option>
-  <option value="dinner">Dinner</option>
-  <option value="beverages">Beverages</option>
-  <option value="desserts">Desserts</option>
-  <option value="soup">Soup</option>
-  <option value="salad">Salad</option>
-  <option value="snacks">Snacks</option>
+  {{#each this.categoryValue.categoryValue as |category|}}
+    <option value ={{category.id }} selected={{eq category.id  @categoryData.id}}>{{category.categoryName}}</option>
+  {{/each}}
 </select>

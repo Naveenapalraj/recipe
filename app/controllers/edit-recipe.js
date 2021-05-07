@@ -2,7 +2,7 @@ import Controller from '@ember/controller';
 import {action} from '@ember/object';
 export default class EditRecipeController extends Controller {
   value = {
-    category : 'lunch'
+    category : '1'
   };
   @action
   editRecipe(){
