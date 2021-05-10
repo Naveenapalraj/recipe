@@ -11,7 +11,6 @@ export default class SelectCategoryComponent extends Component {
     return this.args.value;
   }
   get getCategoryValue(){
-    console.log(this.store);
     return this.store.peekAll('category')._objects;
   }
 
